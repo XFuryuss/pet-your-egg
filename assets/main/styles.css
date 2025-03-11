@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.download-button, .play-web-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.download-button:hover, .play-web-button:hover {
+    background-color: #ffcc00;
+}
+
+.screenshot img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.how-to-title {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.download-options {
+    margin-top: 20px;
+}
+
+.download-options button {
+    margin: 10px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.copyright {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.copyright:hover {
+    color: #ffcc00;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    display: block;
+}
+
+.screenshot {
+    max-width: 50%;
+    height: auto; 
+  }
+
+@media(min-width: 768px) {
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+}
